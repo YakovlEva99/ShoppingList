@@ -1,0 +1,68 @@
+body{
+    background: url(images/food.jpg)  center center no-repeat  fixed;
+    background-size: cover; 
+    height: 100%;
+}
+.done{
+    color: gray;
+    text-decoration: line-through;
+}
+#shopping-list{
+    width: 700px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+ 
+    background-color: antiquewhite;
+}
+#shopping-list:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    border-top:1px solid white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+h2{
+    
+    padding: 15px 15px;
+    color: rgb(43, 35, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+input{
+    font-size: 20px;
+    width: 100%;
+    background-color: rgb(193, 175, 8);
+    box-sizing: border-box;
+    height: 50px;
+
+}
+input:focus{
+    background: white;
+    border: 2px solid rgb(193, 175, 8);
+    outline: none;
+}
+li span{
+    float: right;
+    padding-right: 15px;
+    opacity: 0;
+    transition: 0.3s;
+}
+li:hover span{
+    opacity: 1;
+    
+}
+h2 span{
+    float: right;
+}
